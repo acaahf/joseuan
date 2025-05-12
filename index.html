@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de Magnitudes Físicas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Calculadora de Magnitudes Físicas</h1>
+    <p class="autor">Estudiante adrian josue caamaño henry</p>
+  </header>
+
+  <main id="calculadora">
+    <!-- Secciones para cada fórmula -->
+    <section class="formula" id="velocidad">
+      <h2>1. Velocidad (v = d / t)</h2>
+      <input type="number" id="d1" placeholder="Distancia (m)">
+      <input type="number" id="t1" placeholder="Tiempo (s)">
+      <button onClick="calcularVelocidad()">Calcular</button>
+      <p id="res1" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="aceleracion">
+      <h2>2. Aceleración (a = Δv / Δt)</h2>
+      <input type="number" id="dv2" placeholder="Δv (m/s)">
+      <input type="number" id="dt2" placeholder="Δt (s)">
+      <button onClick="calcularAceleracion()">Calcular</button>
+      <p id="res2" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="fuerza">
+      <h2>3. Fuerza (F = m · a)</h2>
+      <input type="number" id="m3" placeholder="Masa (kg)">
+      <input type="number" id="a3" placeholder="Aceleración (m/s²)">
+      <button onClick="calcularFuerza()">Calcular</button>
+      <p id="res3" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="trabajo">
+      <h2>4. Trabajo (W = F · d · cos(θ))</h2>
+      <input type="number" id="f4" placeholder="Fuerza (N)">
+      <input type="number" id="d4" placeholder="Distancia (m)">
+      <input type="number" id="theta4" placeholder="Ángulo (grados)">
+      <button onClick="calcularTrabajo()">Calcular</button>
+      <p id="res4" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="energiacin">
+      <h2>5. Energía Cinética (K = ½ · m · v²)</h2>
+      <input type="number" id="m5" placeholder="Masa (kg)">
+      <input type="number" id="v5" placeholder="Velocidad (m/s)">
+      <button onClick="calcularEnergiaCinetica()">Calcular</button>
+      <p id="res5" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="energiapot">
+      <h2>6. Energía Potencial Gravitatoria (U = m · g · h)</h2>
+      <input type="number" id="m6" placeholder="Masa (kg)">
+      <input type="number" id="h6" placeholder="Altura (m)">
+      <button onClick="calcularEnergiaPotencial()">Calcular</button>
+      <p id="res6" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="densidad">
+      <h2>7. Densidad (ρ = m / V)</h2>
+      <input type="number" id="m7" placeholder="Masa (kg)">
+      <input type="number" id="v7" placeholder="Volumen (m³)">
+      <button onClick="calcularDensidad()">Calcular</button>
+      <p id="res7" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="presion">
+      <h2>8. Presión (P = F / A)</h2>
+      <input type="number" id="f8" placeholder="Fuerza (N)">
+      <input type="number" id="a8" placeholder="Área (m²)">
+      <button onClick="calcularPresion()">Calcular</button>
+      <p id="res8" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="carga">
+      <h2>9. Carga Eléctrica (q = I · t)</h2>
+      <input type="number" id="i9" placeholder="Corriente (A)">
+      <input type="number" id="t9" placeholder="Tiempo (s)">
+      <button onClick="calcularCarga()">Calcular</button>
+      <p id="res9" class="resultado"></p>
+    </section>
+
+    <section class="formula" id="ohm">
+      <h2>10. Ley de Ohm (V = I · R)</h2>
+      <input type="number" id="i10" placeholder="Corriente (A)">
+      <input type="number" id="r10" placeholder="Resistencia (Ω)">
+      <button onClick="calcularOhm()">Calcular</button>
+      <p id="res10" class="resultado"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

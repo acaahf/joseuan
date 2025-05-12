@@ -1,0 +1,97 @@
+/* Fuente moderna de Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #e9f0f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #003366, #004080);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.autor {
+  font-style: italic;
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.formula {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.formula:hover {
+  transform: scale(1.01);
+}
+
+.formula h2 {
+  margin-bottom: 15px;
+  color: #003366;
+  font-size: 1.4em;
+}
+
+input[type="number"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #004a99;
+}
+
+.resultado {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #009900;
+  font-size: 1.1em;
+}
